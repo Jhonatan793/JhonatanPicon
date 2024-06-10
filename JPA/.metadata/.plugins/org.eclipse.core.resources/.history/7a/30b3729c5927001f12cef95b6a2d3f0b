@@ -1,0 +1,28 @@
+package model;
+
+public class testEntrenadores {
+
+	public static void main(String[] args) {
+		 CRUD ope = new CRUD();  
+         
+//		// PRUEBA LISTAR        
+//		        for (Entrenadores e1 : ope.seleccionarTodo()) {
+//		            System.out.println(e1);
+//		        }
+		        
+		// PRUEBA CREAR     
+		        Entrenadores e1 = new Entrenadores();
+		        e1.setApellido("Chuquiano");
+		        e1.setEdad(Integer.parseInt("30"));
+		        e1.setNacionalidad("Venezolana");
+		        e1.setNombre("Jose");
+		        ope.insertar(e1);     
+		        
+//		// PRUEBA ACTUALIZAR       
+//		        ope.actualizar(new Entrenadores(6,"Mendoza", Integer.parseInt("32"),"Brasileño","Diego"));
+//		                
+//		// PRUEBA ELIMINAR
+//		        ope.eliminar(6);
+		        
+		    }
+		}
